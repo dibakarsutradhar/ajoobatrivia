@@ -27,7 +27,7 @@ class Landing extends Component {
                             <Link to="/register" className="btn waves-effect waves-light btn-large pos-absolute btn-border btn-border-white">Register</Link>
                         </div>
                     </div>
-                        <a className="btn-floating black pulse " href="#howToPlay"><i class="material-icons">arrow_downward</i></a>
+                        <a className="btn-floating black pulse " href="#howToPlay"><i className="material-icons">arrow_downward</i></a>
                 </section>
 
                 { /*Information content */}
@@ -60,7 +60,7 @@ class Landing extends Component {
                                                 </tr>
                                                 <tr>
                                                     <td><span className="icon-number">5</span></td>
-                                                    <td>Finalists will move to <b>Live round on <a href="https://instagram.com/ajoobatrivia" class="color-primary">Instagram</a></b> on <a href="https://instagram.com/ajoobatrivia" class="color-primary txt-bold">Ajooba Trivia</a> instagram live feed</td>
+                                                    <td>Finalists will move to <b>Live round on <a href="https://instagram.com/ajoobatrivia" className="color-primary">Instagram</a></b> on <a href="https://instagram.com/ajoobatrivia" className="color-primary txt-bold">Ajooba Trivia</a> instagram live feed</td>
                                                 </tr>
                                             </table>
                                         </div>
@@ -155,8 +155,9 @@ class Landing extends Component {
                                     <div className="col s12">
                                         <ul className="collapsible">
                                             <li>
-                                            <div className="collapsible-header">1. First</div> {/* Question */}
-                                            <div className="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div> {/* Answer */}
+                                            <div className="collapsible-header">1. What if I disagree with the answers that the host has given to a particular question?</div> {/* Question */}
+                                            <div className="collapsible-body"><span>We can assure you that AjoobaTrivia organizers has put lot of effort into writing these
+                                            questions with countless hours of research. No tricky</span></div> {/* Answer */}
                                             </li>
                                             <li>
                                             <div className="collapsible-header">2. Second</div> {/* Question */}

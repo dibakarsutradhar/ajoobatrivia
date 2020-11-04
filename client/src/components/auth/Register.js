@@ -51,89 +51,89 @@ class Register extends Component {
 
         return (
             <body className="subpage">
-            <div className="main">
-                <section class="banner-img valign-wrapper ">
-                    <div class="banner-title">
-                        <Link to="/">
-                            <img src={BannerTitle} alt="Ajooba Trivia" class=""></img>
-                        </Link> {/* redirect to home page */}
-                    </div>
-                </section> {/* main banner end */}
-                <div className="container">
-                    <section className="row">
-                        <div className="col s12">
-                            <h4 className="txt-center">Register</h4>
-                            <div className="card margin-auto">
-                                <div className="card-content">
-                                    <form noValidate onSubmit={this.onSubmit} className="row">
-                                        <div className="input-field col  s12 margin-bottom-0">
-                                            <input
-                                                onChange={this.onChange}
-                                                value={this.state.name}
-                                                error={errors.name}
-                                                id="name"
-                                                type="text"
-                                                className={classnames("", {invalid: errors.name})}
-                                            />
-                                            <label for="name">* Full Name</label>
-                                            <span className="red-text">{errors.name}</span>
-                                        </div>
-                                        <div className="input-field col  s12 margin-bottom-0">
-                                            <input
-                                                onChange={this.onChange}
-                                                value={this.state.email}
-                                                error={errors.email}
-                                                id="email"
-                                                type="email"
-                                                className={classnames("", {invalid: errors.email})}
-                                            />
-                                            <label for="email">* Email</label>
-                                            <span className="red-text">{errors.email}</span>
-                                        </div>
-                                        <div className="input-field col  s12 margin-bottom-0">
-                                            <input
-                                                onChange={this.onChange}
-                                                value={this.state.password}
-                                                error={errors.password}
-                                                id="password"
-                                                type="password"
-                                                className={classnames("", {invalid: errors.password})}
-                                            />
-                                            <label for="password">* Password</label>
-                                            <span className="red-text">{errors.password}</span>
-                                        </div>
-                                        <div className="input-field col  s12 margin-bottom-0">
-                                            <input
-                                                onChange={this.onChange}
-                                                value={this.state.password2}
-                                                error={errors.password2}
-                                                id="password2"
-                                                type="password"
-                                                className={classnames("", {invalid: errors.password2})}
-                                            />
-                                            <label for="password2">* Confirm Password</label>
-                                            <span className="red-text">{errors.password2}</span>
-                                        </div>
-                                        <div className="input-field col s12 margin-bottom-0">
-                                            <input
-                                                onChange={this.onChange}
-                                                value={this.state.studentid}
-                                                id="studentid"
-                                                type="text"
-                                            />
-                                            <label for="studentid">Student ID if you're a SEGian</label>
-                                        </div>
-                                        <div className="input-field col s12 margin-bottom-0 txt-center">
-                                            <button className="btn waves-effect waves-light btn-yellow " type="submit" name="action">Submit<i class="material-icons right">send</i>
-                                            </button> {/* triggers model */}
-                                        </div>
-                                    </form> {/* contact form end */}
-                                </div> {/* card-content div close */}
-                            </div> {/* card div close */}
+                <div className="main">
+                    <section className="banner-img valign-wrapper ">
+                        <div className="banner-title">
+                            <Link to="/">
+                                <img src={BannerTitle} alt="Ajooba Trivia" className=""></img>
+                            </Link> {/* redirect to home page */}
                         </div>
-                    </section>
+                    </section> {/* main banner end */}
+                    <div className="container">
+                        <section className="row">
+                            <div className="col s12">
+                                <h4 className="txt-center">Register</h4>
+                                <div className="card margin-auto">
+                                    <div className="card-content">
+                                        <form noValidate onSubmit={this.onSubmit} className="row">
+                                            <div className="input-field col  s12 margin-bottom-0">
+                                                <input
+                                                    onChange={this.onChange}
+                                                    value={this.state.name}
+                                                    error={errors.name}
+                                                    id="name"
+                                                    type="text"
+                                                    className={classnames("", {invalid: errors.name})}
+                                                />
+                                                <label htmlFor="name">* Full Name</label>
+                                                <span className="red-text">{errors.name}</span>
+                                            </div>
+                                            <div className="input-field col  s12 margin-bottom-0">
+                                                <input
+                                                    onChange={this.onChange}
+                                                    value={this.state.email}
+                                                    error={errors.email}
+                                                    id="email"
+                                                    type="email"
+                                                    className={classnames("", {invalid: errors.email})}
+                                                />
+                                                <label htmlFor="email">* Email</label>
+                                                <span className="red-text">{errors.email}</span>
+                                            </div>
+                                            <div className="input-field col  s12 margin-bottom-0">
+                                                <input
+                                                    onChange={this.onChange}
+                                                    value={this.state.password}
+                                                    error={errors.password}
+                                                    id="password"
+                                                    type="password"
+                                                    className={classnames("", {invalid: errors.password})}
+                                                />
+                                                <label htmlFor="password">* Password</label>
+                                                <span className="red-text">{errors.password}</span>
+                                            </div>
+                                            <div className="input-field col  s12 margin-bottom-0">
+                                                <input
+                                                    onChange={this.onChange}
+                                                    value={this.state.password2}
+                                                    error={errors.password2}
+                                                    id="password2"
+                                                    type="password"
+                                                    className={classnames("", {invalid: errors.password2})}
+                                                />
+                                                <label htmlFor="password2">* Confirm Password</label>
+                                                <span className="red-text">{errors.password2}</span>
+                                            </div>
+                                            <div className="input-field col s12 margin-bottom-0">
+                                                <input
+                                                    onChange={this.onChange}
+                                                    value={this.state.studentid}
+                                                    id="studentid"
+                                                    type="text"
+                                                />
+                                                <label htmlFor="studentid">Student ID if you're a SEGian</label>
+                                            </div>
+                                            <div className="input-field col s12 margin-bottom-0 txt-center">
+                                                <button className="btn waves-effect waves-light btn-yellow " type="submit" name="action">Submit<i className="material-icons right">send</i>
+                                                </button> {/* triggers model */}
+                                            </div>
+                                        </form> {/* contact form end */}
+                                    </div> {/* card-content div close */}
+                                </div> {/* card div close */}
+                            </div>
+                        </section>
+                    </div>
                 </div>
-            </div>
             </body>
         )
     }

@@ -6,11 +6,11 @@ class Navbar extends Component {
         return (
             <header>
                 <nav>
-                    <div class="nav-wrapper container-fluid">
-                    <ul class="social-media">
-                        <li>Follow Us: </li>
-                        <li><a href="https://www.instagram.com/ajoobatrivia"><i className="fa fa-instagram" aria-hidden="true"></i></a></li>
-                    </ul>
+                    <div className="nav-wrapper container-fluid">
+                        <ul className="social-media">
+                            <li>Follow Us: </li>
+                            <li><a href="https://www.instagram.com/ajoobatrivia"><i className="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
                     </div>
                 </nav>
             </header>

@@ -11,6 +11,7 @@ import Landing from "./components/layout/Landing";
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import Successful from "./components/layout/Successful";
+import Footer from "./components/layout/Footer";
 
 class App extends Component {
   render() {
@@ -23,6 +24,7 @@ class App extends Component {
             <Route exact path="/Register" component={Register} />
             <Route exact path="/Login" component={Login} />
             <Route exact path="/Successful" component={Successful} />
+            <Footer />
           </div>
         </Router>
       </Provider>
