@@ -80,7 +80,7 @@ nav .btn i {
   position: relative;
   /* object-fit: cover;
     object-position: center;*/
-  /*background: url("../images/pattern.png") repeat; */
+  background: url("./images/pattern.png") repeat;
   background-size: contain;
   background-color: #febd59;
   background-position: center;

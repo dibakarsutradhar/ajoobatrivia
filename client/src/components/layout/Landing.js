@@ -4,6 +4,18 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+import BannerTitle from '../../images/banner-title.png';
+import team1 from '../../images/team1.jpg';
+import team2 from '../../images/team2.jpg';
+import team3 from '../../images/team3.jpg';
+import team4 from '../../images/team4.jpg';
+import team5 from '../../images/team5.jpg';
+import team6 from '../../images/team6.jpg';
+import team7 from '../../images/team7.jpg';
+import team8 from '../../images/team8.jpg';
+import team9 from '../../images/team9.jpg';
+import team10 from '../../images/team10.jpg';
+
 class Landing extends Component {
     render() {
         return (
@@ -11,7 +23,7 @@ class Landing extends Component {
                 <div>
                     <section className="banner-img valign-wrapper">
                         <div className="banner-title">
-                            <img src="images/banner-title.png" alt="banner" className=""></img>
+                            <img src={BannerTitle} alt="banner" className=""></img>
                             <div className="calltoaction pos-relative">
                                 <Link to="/register" className="btn waves-effect waves-light btn-large pos-absolute btn-border btn-border-white">Register</Link>
                             </div>
@@ -170,52 +182,52 @@ class Landing extends Component {
                                     </div>
                                     <div className="team-flex padding-bottom-20">
                                         <div className="cont">
-                                            <img src="images/team1.jpg" className="img-responsive z-depth-1"></img>
+                                            <img src={team1} className="img-responsive z-depth-1"></img>
                                             <h5 className="fontw-500 center-align">Selvadevan</h5>
                                             <h6 className="fontw-500 center-align">Project Manager</h6>
                                         </div>
                                         <div className="cont">
-                                            <img src="images/team2.jpg" className="img-responsive z-depth-1"></img>
+                                            <img src={team2} className="img-responsive z-depth-1"></img>
                                             <h5 className="fontw-500 center-align">Alvindren</h5>
                                             <h6 className="fontw-500 center-align">Deputy Project Manager</h6>
                                         </div>
                                         <div className="cont">
-                                            <img src="images/team3.jpg" className="img-responsive z-depth-1"></img>
+                                            <img src={team3} className="img-responsive z-depth-1"></img>
                                             <h5 className="fontw-500 center-align">Sarveen</h5>
                                             <h6 className="fontw-500 center-align">Secretary</h6>
                                         </div>
                                         <div className="cont">
-                                            <img src="images/team4.jpg" className="img-responsive z-depth-1"></img>
+                                            <img src={team4} className="img-responsive z-depth-1"></img>
                                             <h5 className="fontw-500 center-align">Mohamed Abdallah</h5>
                                             <h6 className="fontw-500 center-align">Vice Secretary</h6>
                                         </div>
                                         <div className="cont">
-                                            <img src="images/team5.jpg" className="img-responsive z-depth-1"></img>
+                                            <img src={team5} className="img-responsive z-depth-1"></img>
                                             <h5 className="fontw-500 center-align">Arvind Suresh</h5>
                                             <h6 className="fontw-500 center-align">Marketing Manager</h6>
                                         </div>
                                         <div className="cont">
-                                            <img src="images/team6.jpg" className="img-responsive z-depth-1"></img>
+                                            <img src={team6} className="img-responsive z-depth-1"></img>
                                             <h5 className="fontw-500 center-align">Dibakar Sutra Dhar</h5>
                                             <h6 className="fontw-500 center-align">Media and App Developer</h6>
                                         </div>
                                         <div className="cont">
-                                            <img src="images/team7.jpg" className="img-responsive z-depth-1"></img>
+                                            <img src={team7} className="img-responsive z-depth-1"></img>
                                             <h5 className="fontw-500 center-align">Nandita Dhanda</h5>
                                             <h6 className="fontw-500 center-align">Media and App Developer</h6>
                                         </div>
                                         <div className="cont">
-                                            <img src="images/team8.jpg" className="img-responsive z-depth-1"></img>
+                                            <img src={team8} className="img-responsive z-depth-1"></img>
                                             <h5 className="fontw-500 center-align">Asadur Rahman</h5>
                                             <h6 className="fontw-500 center-align">Content Manager</h6>
                                         </div>
                                         <div className="cont">
-                                            <img src="images/team9.jpg" className="img-responsive z-depth-1"></img>
+                                            <img src={team9} className="img-responsive z-depth-1"></img>
                                             <h5 className="fontw-500 center-align">Liang Hejiajian</h5>
                                             <h6 className="fontw-500 center-align">Content Manager</h6>
                                         </div>
                                         <div className="cont">
-                                            <img src="images/team10.jpg" className="img-responsive z-depth-1"></img>
+                                            <img src={team10} className="img-responsive z-depth-1"></img>
                                             <h5 className="fontw-500 center-align">Abdourahmane Dialo</h5>
                                             <h6 className="fontw-500 center-align">Content Manager</h6>
                                         </div>
