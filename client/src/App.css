@@ -331,9 +331,10 @@ ol li::marker {
   background: #de9321;
 }
 
+/*
 main {
-  /*  background: #211f1f; */
-}
+  background: #211f1f;
+} */
 
 aside {
   background: #000;
