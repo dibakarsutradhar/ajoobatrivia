@@ -15,6 +15,7 @@ class Register extends Component {
             email: "",
             password: "",
             password2: "",
+            studentid: "",
             errors: {}
         };
     }
@@ -38,7 +39,8 @@ class Register extends Component {
             name: this.state.name,
             email: this.state.email,
             password: this.state.password,
-            password2: this.state.password2
+            password2: this.state.password2,
+            studentid: this.state.studentid
         };
 
         this.props.registerUser(newUser, this.props.history);
@@ -73,7 +75,7 @@ class Register extends Component {
                                                 type="text"
                                                 className={classnames("", {invalid: errors.name})}
                                             />
-                                            <label for="name">Full Name</label>
+                                            <label for="name">* Full Name</label>
                                             <span className="red-text">{errors.name}</span>
                                         </div>
                                         <div className="input-field col  s12 margin-bottom-0">
@@ -85,7 +87,7 @@ class Register extends Component {
                                                 type="email"
                                                 className={classnames("", {invalid: errors.email})}
                                             />
-                                            <label for="email">Email</label>
+                                            <label for="email">* Email</label>
                                             <span className="red-text">{errors.email}</span>
                                         </div>
                                         <div className="input-field col  s12 margin-bottom-0">
@@ -97,7 +99,7 @@ class Register extends Component {
                                                 type="password"
                                                 className={classnames("", {invalid: errors.password})}
                                             />
-                                            <label for="password">Password</label>
+                                            <label for="password">* Password</label>
                                             <span className="red-text">{errors.password}</span>
                                         </div>
                                         <div className="input-field col  s12 margin-bottom-0">
@@ -109,27 +111,17 @@ class Register extends Component {
                                                 type="password"
                                                 className={classnames("", {invalid: errors.password2})}
                                             />
-                                            <label for="password2">Confirm Password</label>
+                                            <label for="password2">* Confirm Password</label>
                                             <span className="red-text">{errors.password2}</span>
                                         </div>
-                                        <div className="col l6 s12 margin-bottom-0 margin-top-10">
-                                            <p>Are you a SEGi Student?</p>
-                                            <p className="padding-top-5">
-                                            <label className="margin-right-20">
-                                                <input name="group1" type="radio"  value ="yes"/>
-                                                <span>Yes</span>
-                                            </label>
-                                            <label>
-                                                <input name="group1" type="radio" value="no" />
-                                                <span>No</span>
-                                            </label>
-                                            </p>
-                                        </div>
-
-                                        {/* add condition */}
-                                        <div className="input-field col l6 s12 margin-bottom-0">
-                                            <input id="st_id" type="text" className="validate"/>
-                                            <label for="st_id">Student ID</label>
+                                        <div className="input-field col s12 margin-bottom-0">
+                                            <input
+                                                onChange={this.onChange}
+                                                value={this.state.studentid}
+                                                id="studentid"
+                                                type="text"
+                                            />
+                                            <label for="studentid">Student ID if you're a SEGian</label>
                                         </div>
                                         <div className="input-field col s12 margin-bottom-0 txt-center">
                                             <button className="btn waves-effect waves-light btn-yellow " type="submit" name="action">Submit<i class="material-icons right">send</i>

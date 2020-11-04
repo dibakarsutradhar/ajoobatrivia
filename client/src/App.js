@@ -10,6 +10,7 @@ import Navbar from "./components/layout/Navbar";
 import Landing from "./components/layout/Landing";
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
+import Successful from "./components/layout/Successful";
 
 class App extends Component {
   render() {
@@ -21,6 +22,7 @@ class App extends Component {
             <Route exact path="/" component={Landing} />
             <Route exact path="/Register" component={Register} />
             <Route exact path="/Login" component={Login} />
+            <Route exact path="/Successful" component={Successful} />
           </div>
         </Router>
       </Provider>
