@@ -1,16 +1,19 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable react/jsx-no-comment-textnodes */
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+// import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 class Landing extends Component {
     render() {
         return (
-            <Router>
+            //<Router>
                 <div>
                     <section className="banner-img valign-wrapper">
                         <div className="banner-title">
                             <img src="images/banner-title.png" alt="banner" className=""></img>
                             <div className="calltoaction pos-relative">
-                                <Link to="/register" className="btn waves-effect waves-light btn-large pos-absolute btn-border btn-border-white">Register</Link>
+                                <a href="/register" className="btn waves-effect waves-light btn-large pos-absolute btn-border btn-border-white">Register</a>
                             </div>
                         </div>
                             <a className="btn-floating black pulse " href="#howToPlay"><i class="material-icons">arrow_downward</i></a>
@@ -236,7 +239,7 @@ class Landing extends Component {
                                             <li><a href="#faq">FAQ</a></li>
                                             <li><a href="#about">About Us</a></li>
                                         </ul>
-                                        <Link to="/register" className="btn btn-large btn-border btn-border-yellow margin-top-20">Register</Link>
+                                        <a href="/register" className="btn btn-large btn-border btn-border-yellow margin-top-20">Register</a>
                                     </div>
                                     <div className="card ">
                                         <div className="card-content ">
@@ -250,7 +253,7 @@ class Landing extends Component {
                                         <div className="card-action">
                                             <ul className="social-media">
                                                 <li>Follow Us: &nbsp;</li>
-                                                <li><Link to="https://www.instagram.com/ajoobatrivia" target="_blank"><i className="fa fa-instagram" aria-hidden="true"></i></Link></li>
+                                                <li><a href="https://www.instagram.com/ajoobatrivia"><i className="fa fa-instagram" aria-hidden="true"></i></a></li>
                                             </ul> {/* social media icons */}
                                         </div>
                                     </div>
@@ -259,7 +262,7 @@ class Landing extends Component {
                         </div>
                     </section>
                 </div>
-            </Router>
+            //</Router>
         )
     }
 }
