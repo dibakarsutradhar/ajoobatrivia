@@ -2,7 +2,7 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React, { Component } from 'react';
-// import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class Landing extends Component {
     render() {
@@ -13,7 +13,7 @@ class Landing extends Component {
                         <div className="banner-title">
                             <img src="images/banner-title.png" alt="banner" className=""></img>
                             <div className="calltoaction pos-relative">
-                                <a href="/register" className="btn waves-effect waves-light btn-large pos-absolute btn-border btn-border-white">Register</a>
+                                <Link to="/register" className="btn waves-effect waves-light btn-large pos-absolute btn-border btn-border-white">Register</Link>
                             </div>
                         </div>
                             <a className="btn-floating black pulse " href="#howToPlay"><i class="material-icons">arrow_downward</i></a>
