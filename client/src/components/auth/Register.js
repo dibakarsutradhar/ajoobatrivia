@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import classnames from 'classnames';
+import {registerUser } from '../../actions/authActions';
 
 import BannerTitle from '../../images/banner-title.png';
 
@@ -13,6 +17,14 @@ class Register extends Component {
             password2: "",
             errors: {}
         };
+    }
+
+    componentWillReceiveProps(nextProps) {
+        if(nextProps.errors) {
+            this.setState({
+                errors: nextProps.errors
+            });
+        }
     }
 
     onChange = e => {
@@ -29,7 +41,7 @@ class Register extends Component {
             password2: this.state.password2
         };
 
-        console.log(newUser);
+        this.props.registerUser(newUser, this.props.history);
     };
 
     render() {
@@ -40,9 +52,9 @@ class Register extends Component {
             <div className="main">
                 <section class="banner-img valign-wrapper ">
                     <div class="banner-title">
-                        <a href="home.html">
+                        <Link to="/">
                             <img src={BannerTitle} alt="Ajooba Trivia" class=""></img>
-                        </a> {/* redirect to home page */}
+                        </Link> {/* redirect to home page */}
                     </div>
                 </section> {/* main banner end */}
                 <div className="container">
@@ -59,8 +71,10 @@ class Register extends Component {
                                                 error={errors.name}
                                                 id="name"
                                                 type="text"
+                                                className={classnames("", {invalid: errors.name})}
                                             />
                                             <label for="name">Full Name</label>
+                                            <span className="red-text">{errors.name}</span>
                                         </div>
                                         <div className="input-field col  s12 margin-bottom-0">
                                             <input
@@ -69,8 +83,10 @@ class Register extends Component {
                                                 error={errors.email}
                                                 id="email"
                                                 type="email"
+                                                className={classnames("", {invalid: errors.email})}
                                             />
                                             <label for="email">Email</label>
+                                            <span className="red-text">{errors.email}</span>
                                         </div>
                                         <div className="input-field col  s12 margin-bottom-0">
                                             <input
@@ -79,8 +95,10 @@ class Register extends Component {
                                                 error={errors.password}
                                                 id="password"
                                                 type="password"
+                                                className={classnames("", {invalid: errors.password})}
                                             />
                                             <label for="password">Password</label>
+                                            <span className="red-text">{errors.password}</span>
                                         </div>
                                         <div className="input-field col  s12 margin-bottom-0">
                                             <input
@@ -89,8 +107,10 @@ class Register extends Component {
                                                 error={errors.password2}
                                                 id="password2"
                                                 type="password"
+                                                className={classnames("", {invalid: errors.password2})}
                                             />
                                             <label for="password2">Confirm Password</label>
+                                            <span className="red-text">{errors.password2}</span>
                                         </div>
                                         <div className="col l6 s12 margin-bottom-0 margin-top-10">
                                             <p>Are you a SEGi Student?</p>
@@ -127,4 +147,15 @@ class Register extends Component {
     }
 }
 
-export default Register;
+Register.propTypes = {
+    registerUser: PropTypes.func.isRequired,
+    auth: PropTypes.object.isRequired,
+    errors: PropTypes.object.isRequired
+};
+
+const mapStateToProps = state => ({
+    auth: state.auth,
+    errors: state.errors
+});
+
+export default connect(mapStateToProps, { registerUser })(withRouter(Register));
