@@ -36,7 +36,7 @@ require("./config/passport")(passport);
 
 // Routes
 app.use("/api/users", users);
-app.use('/', express.static(path.resolve(__dirname, './client/public')))
+app.use('/', express.static(path.resolve(__dirname, './client/build')))
 
 /*
 // Serve static assests if in Production
