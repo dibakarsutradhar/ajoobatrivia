@@ -155,17 +155,36 @@ class Landing extends Component {
                                     <div className="col s12">
                                         <ul className="collapsible">
                                             <li>
-                                            <div className="collapsible-header">1. What if I disagree with the answers that the host has given to a particular question?</div> {/* Question */}
-                                            <div className="collapsible-body"><span>We can assure you that AjoobaTrivia organizers has put lot of effort into writing these
-                                            questions with countless hours of research. No tricky</span></div> {/* Answer */}
+                                            <div><b>1. What if I disagree with the answers that the host has given to a particular question?</b></div> {/* Question */}
+                                            <p><span>We can assure you that AjoobaTrivia organizers has put lot of effort into writing these questions with countless hours of research. No tricky, misleading or ambiguous questions will be asked. Our questions are 100% correct. The intent of this event is to provide engaging and entertainment questions that are accurate and concise. If you believe that the host has given an incorrect answer, or that your answer is also acceptable, please wait until the end of the round to discuss the issue. Approach the host politely and let them know your concern, explaining with proper facts and proof of justification for the argument. The host will take all this into consideration and try to settle in by validating and come up with a most favorable decision. Please do remember that the host will have the final say in all circumstances during play.</span></p> {/* Answer */}
                                             </li>
                                             <li>
-                                            <div className="collapsible-header">2. Second</div> {/* Question */}
-                                            <div className="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>{/* Answer */}
+                                            <div><b>2. I have accidently refreshed my webpage during the play or my internet is quite slow. What should I do?</b></div> {/* Question */}
+                                            <p><span>Please ensure that you have a proper internet connection before proceeding to play. Ourwebsite has been developed with recent technologies to supportheavy usage. Also, do note refreshing the page while playing will disqualify you from the event. In case of server down, we apologize for the disruption. And we hope such technical difficulties won’t happen as our system will be thoroughly tested before deploying. In case, of refreshing accidently at the beginning of the event, immediately notify the organizers – Selva (012 247 5483) &amp; Alvin (017 387 2796).</span></p>{/* Answer */}
                                             </li>
                                             <li>
-                                            <div className="collapsible-header">3. Third</div> {/* Question */}
-                                            <div className="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div> {/* Answer */}
+                                            <div><b>3. Will Round 1 be anonymous? And will the Round 1 scores be displayed publicly?</b></div> {/* Question */}
+                                            <p><span>Yes, Round 1 will totally anonymous. Participants will still get certificates issued. Regarding the scores, only the contestants that qualified for Round 2 will be displayed.</span></p> {/* Answer */}
+                                            </li>
+                                            <li>
+                                                <div><b>4. What time-zone will the event be played according?</b></div>
+                                                <p><span> Event starts at 2 P.M. (MYT) on 11 th November, 2020. </span></p>
+                                            </li>
+                                            <li>
+                                                <div><b>5. How to log in?</b></div>
+                                                <p><span>Register at this website before 11th November. Login with registered details on the day of event and wait for the event to begin at 2 P.M. (MYT).</span></p>
+                                            </li>
+                                            <li>
+                                                <div><b>6. How will Round 2 be conducted?</b></div>
+                                                <p><span>Round 2 will be conducted live stream on Instagram.</span></p>
+                                            </li>
+                                            <li>
+                                                <div><b>7. What type of questions will be asked?</b></div>
+                                                <p><span>The questions will be on varying subject areas – General, Politics, Science, Sports etc – in no particular order of arrangement. Do not fret, the AjoobaTrivia questions were prepared to have fun.</span></p>
+                                            </li>
+                                            <li>
+                                                <div><b>8. Any prizes awarded?</b></div>
+                                                <p><span>All the participants will be issued certificates, and amazing prizes will be given out to the winners.</span></p>
                                             </li>
                                         </ul>
                                     </div>
