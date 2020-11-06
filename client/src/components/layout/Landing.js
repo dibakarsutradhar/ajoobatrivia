@@ -24,7 +24,7 @@ class Landing extends Component {
                     <div className="banner-title">
                         <img src={BannerTitle} alt="banner" className=""></img>
                         <div className="calltoaction pos-relative">
-                            <Link to="/register" className="btn waves-effect waves-light btn-large pos-absolute btn-border btn-border-white">Register</Link>
+                            <Link to="/login" className="btn waves-effect waves-light btn-large pos-absolute btn-border btn-border-white">Play</Link>
                         </div>
                     </div>
                         <a className="btn-floating black pulse " href="#howToPlay"><i className="material-icons">arrow_downward</i></a>
@@ -44,7 +44,7 @@ class Landing extends Component {
                                             <table>
                                                 <tr>
                                                     <td><span className="icon-number">1</span></td>
-                                                    <td>Register between <b>5<sup>th</sup> November - 10<sup>th</sup> November 11:59pm MST</b></td>
+                                                    <td><b>** Registration Closed ** </b> || Register between <b>5<sup>th</sup> November - 10<sup>th</sup> November 11:59pm MST</b></td>
                                                 </tr>
                                                 <tr>
                                                     <td><span className="icon-number">2</span></td>
@@ -255,7 +255,7 @@ class Landing extends Component {
 
                             {/* <ticky registration button - only visible on medium devices and below */}
                             <section className="sticky-registration container-fluid hide-on-large-only txt-center">
-                                <Link to="/register" className="btn btn-large btn-border btn-border-yellow">Register</Link>
+                                <Link to="/login" className="btn btn-large btn-border btn-border-yellow">Play</Link>
                             </section>
                         </main>
 
@@ -270,7 +270,7 @@ class Landing extends Component {
                                         <li><a href="#faq">FAQ</a></li>
                                         <li><a href="#about">About Us</a></li>
                                     </ul>
-                                    <Link to="/register" className="btn btn-large btn-border btn-border-yellow margin-top-20">Register</Link>
+                                    <Link to="/login" className="btn btn-large btn-border btn-border-yellow margin-top-20">Play</Link>
                                 </div>
                                 <div className="card ">
                                     <div className="card-content ">
