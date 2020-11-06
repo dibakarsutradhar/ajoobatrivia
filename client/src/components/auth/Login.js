@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import classnames from 'classnames';
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import { loginUser } from "../../actions/authActions";
 
 import BannerTitle from '../../images/banner-title.png';
 
@@ -12,6 +15,19 @@ class Login extends Component {
             password: "",
             errors: {}
         };
+    }
+
+    componentWillReceiveProps(nextProps) {
+        if(nextProps.auth.isAuthenticated) {
+            // Push user to dashboard when they login
+            this.props.history.push("/dashboard");
+        }
+
+        if(nextProps.errors) {
+            this.setState({
+                errors: nextProps.errors
+            });
+        }
     }
 
     onChange = e => {
@@ -26,7 +42,7 @@ class Login extends Component {
             password: this.state.password
         };
 
-        console.log(userData);
+        this.props.loginUser(userData);
     };
 
     render() {
@@ -56,10 +72,13 @@ class Login extends Component {
                                                     error={errors.email}
                                                     id="email"
                                                     type="email"
-                                                    className={classnames("", {invalid: errors.email})}
+                                                    className={classnames("", {invalid: errors.email || errors.emailnotfound})}
                                                 />
-                                                <label htmlFor="email">* Email</label>
-                                                <span className="red-text">{errors.email}</span>
+                                                <label htmlFor="email">Email</label>
+                                                <span className="red-text">
+                                                    {errors.email}
+                                                    {errors.emailnotfound}
+                                                </span>
                                             </div>
                                             <div className="input-field col  s12 margin-bottom-0">
                                                 <input
@@ -68,10 +87,13 @@ class Login extends Component {
                                                     error={errors.password}
                                                     id="password"
                                                     type="password"
-                                                    className={classnames("", {invalid: errors.password})}
+                                                    className={classnames("", {invalid: errors.password || errors.paswordincorrect})}
                                                 />
-                                                <label htmlFor="password">* Password</label>
-                                                <span className="red-text">{errors.password}</span>
+                                                <label htmlFor="password">Password</label>
+                                                <span className="red-text">
+                                                    {errors.password}
+                                                    {errors.passwordincorrect}
+                                                </span>
                                             </div>
                                             <div className="input-field col s12 margin-bottom-0 txt-center">
                                                 <button className="btn waves-effect waves-light btn-yellow " type="submit" name="action">Login<i className="material-icons right">send</i>
@@ -89,4 +111,15 @@ class Login extends Component {
     }
 }
 
-export default Login;
+Login.propTypes = {
+    loginUser: PropTypes.func.isRequired,
+    auth: PropTypes.object.isRequired,
+    errors: PropTypes.object.isRequired
+};
+
+const mapStateToProps = state => ({
+    auth: state.auth,
+    errors: state.errors
+});
+
+export default connect(mapStateToProps, { loginUser })(Login);
