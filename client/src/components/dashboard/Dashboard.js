@@ -15,6 +15,7 @@ class Dashboard extends Component {
         return (
             <div>
                 <h1>MAIN GAME</h1>
+                <p>Hey there, {user.name.split(" ")[0]}</p>
             </div>
         );
     }
