@@ -17,6 +17,8 @@ import Successful from "./components/layout/Successful";
 import Footer from "./components/layout/Footer";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 import Dashboard from "./components/dashboard/Dashboard";
+import Quiz from "./components/quiz/Play";
+import Play from "./components/quiz/Play";
 
 // Check for token to keep user logged in
 if(localStorage.jwtToken) {
@@ -50,6 +52,7 @@ class App extends Component {
             <Route exact path="/Register" component={Register} />
             <Route exact path="/Login" component={Login} />
             <Route exact path="/Successful" component={Successful} />
+            <Route exact path="/Play" component={Play} />
             <Switch>
               <PrivateRoute exact path="/Dashboard" component={Dashboard} />
             </Switch>
