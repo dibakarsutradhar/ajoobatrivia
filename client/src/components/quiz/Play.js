@@ -44,6 +44,7 @@ class Play extends Component {
             this.setState({
                 currentQuestion,
                 nextQuestion,
+                numberOfQuestions: questions.length,
                 answer
             });
         }
@@ -93,7 +94,7 @@ class Play extends Component {
     };
 
     render() {
-        const { currentQuestion } = this.state;
+        const { currentQuestion, currentQuestionIndex, numberOfQuestions } = this.state;
 
         return (
             <Fragment>
@@ -105,7 +106,7 @@ class Play extends Component {
                     </div>
                     <div>
                         <p>
-                            <span>1 of 50</span>
+                            <span>{currentQuestionIndex + 1} of {numberOfQuestions}</span>
                             20<span className="mdi mdi-clock-outline mdi-24px"></span>
                         </p>
                     </div>
