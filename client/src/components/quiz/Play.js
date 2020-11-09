@@ -31,6 +31,10 @@ class Play extends Component {
         this.startTimer();
     };
 
+    componentWillUnmount() {
+        clearInterval(this.interval)
+    }
+
     displayQuestions = (
         questions = this.state.questions,
         currentQuestion,
@@ -73,7 +77,11 @@ class Play extends Component {
             currentQuestionIndex: prevState.currentQuestionIndex + 1,
             numberOfAnsQuestions: prevState.numberOfAnsQuestions + 1
         }), () => {
-            this.displayQuestions(this.state.questions, this.state.currentQuestion, this.state.nextQuestion);
+            if(this.state.nextQuestion === undefined) {
+                this.endGame();
+            } else {
+                this.displayQuestions(this.state.questions, this.state.currentQuestion, this.state.nextQuestion);
+            };
         });
     };
 
@@ -91,12 +99,16 @@ class Play extends Component {
             currentQuestionIndex: prevState.currentQuestionIndex + 1,
             numberOfAnsQuestions: prevState.numberOfAnsQuestions + 1
         }), () => {
-            this.displayQuestions(this.state.questions, this.state.currentQuestion, this.state.nextQuestion);
+            if(this.state.nextQuestion === undefined) {
+                this.endGame();
+            } else {
+                this.displayQuestions(this.state.questions, this.state.currentQuestion, this.state.nextQuestion);
+            };
         });
     };
 
     startTimer = () => {
-        const countDownTime = Date.now() + 30000;
+        const countDownTime = Date.now() + 300000;
         this.interval = setInterval(() => {
             const now = new Date();
             const distance = countDownTime - now;
@@ -112,9 +124,7 @@ class Play extends Component {
                         seconds: 0
                     }
                 }, () => {
-                    alert('Quiz has ended!');
-                    // comment out during prod
-                    //this.props.history.push('/');
+                    this.endGame();
                 });
             } else {
                 this.setState({
@@ -124,6 +134,22 @@ class Play extends Component {
                     }
                 });
             }
+        }, 1000);
+    };
+
+    endGame = () => {
+        alert('Game has ended !');
+        const { state } = this;
+        const playerStats = {
+            score: state.score,
+            numberOfQuestions: state.numberOfQuestions,
+            numberOfAnsQuestions: state.numberOfAnsQuestions,
+            correctAnswers: state.correctAnswers,
+            wrongAnswers: state.wrongAnswers
+        };
+        console.log(playerStats);
+        setTimeout(() => {
+            this.props.history.push('/');
         }, 1000);
     };
 
