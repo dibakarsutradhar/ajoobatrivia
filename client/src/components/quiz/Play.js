@@ -25,7 +25,7 @@ class Play extends Component {
     }
 
     componentDidMount() {
-        const { questions, currentQuestion, nextQuestion } = this.state;
+        // const { questions, currentQuestion, nextQuestion } = this.state;
         this.displayQuestions(this.state.questions, this.state.currentQuestion, this.state.nextQuestion);
     };
 
@@ -69,7 +69,9 @@ class Play extends Component {
             correctAnswers: prevState.correctAnswers + 1,
             currentQuestionIndex: prevState.currentQuestionIndex + 1,
             numberOfAnsQuestions: prevState.numberOfAnsQuestions + 1
-        }));
+        }), () => {
+            this.displayQuestions(this.state.questions, this.state.currentQuestion, this.state.nextQuestion);
+        });
     };
 
     wrongAnswer = () => {
@@ -85,7 +87,9 @@ class Play extends Component {
             wrongAnswers: prevState.wrongAnswers + 1,
             currentQuestionIndex: prevState.currentQuestionIndex + 1,
             numberOfAnsQuestions: prevState.numberOfAnsQuestions + 1
-        }));
+        }), () => {
+            this.displayQuestions(this.state.questions, this.state.currentQuestion, this.state.nextQuestion);
+        });
     };
 
     render() {
