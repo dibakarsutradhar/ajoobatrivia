@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import isEmpty from 'is-empty';
 import M from 'materialize-css';
 
@@ -22,11 +22,13 @@ class Play extends Component {
             usedFiftyFifty: false,
             time: {}
         };
+        this.interval = null;
     }
 
     componentDidMount() {
         // const { questions, currentQuestion, nextQuestion } = this.state;
         this.displayQuestions(this.state.questions, this.state.currentQuestion, this.state.nextQuestion);
+        this.startTimer();
     };
 
     displayQuestions = (
@@ -93,39 +95,64 @@ class Play extends Component {
         });
     };
 
+    startTimer = () => {
+        const countDownTime = Date.now() + 30000;
+        this.interval = setInterval(() => {
+            const now = new Date();
+            const distance = countDownTime - now;
+
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor(distance % (1000 * 60)) / 1000;
+
+            if(distance < 0) {
+                clearInterval(this.interval);
+                this.setState({
+                    time: {
+                        minutes: 0,
+                        seconds: 0
+                    }
+                }, () => {
+                    alert('Quiz has ended!');
+                    // comment out during prod
+                    //this.props.history.push('/');
+                });
+            } else {
+                this.setState({
+                    time: {
+                        minutes,
+                        seconds
+                    }
+                });
+            }
+        }, 1000);
+    };
+
     render() {
-        const { currentQuestion, currentQuestionIndex, numberOfQuestions } = this.state;
+        const { 
+            currentQuestion,
+            currentQuestionIndex,
+            numberOfQuestions,
+            time
+        } = this.state;
 
         return (
-            <Fragment>
-                <div className="questions">
-                    <div className="lifeline-container">
-                        <p>
-                            <span className="mdi mdi-set-center mdi-24px lifeline-icon"></span>2 
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            <span>{currentQuestionIndex + 1} of {numberOfQuestions}</span>
-                            20<span className="mdi mdi-clock-outline mdi-24px"></span>
-                        </p>
-                    </div>
-                    <h5>{currentQuestion.question}</h5>
-                    <div className="options-container">
-                        <p onClick={this.handleOptionClick} className="option">{currentQuestion.optionA}</p>
-                        <p onClick={this.handleOptionClick} className="option">{currentQuestion.optionB}</p>
-                    </div>
-                    <div className="options-container">
-                        <p onClick={this.handleOptionClick} className="option">{currentQuestion.optionC}</p>
-                        <p onClick={this.handleOptionClick} className="option">{currentQuestion.optionD}</p>
-                    </div>
-
-                    <div className="button-container">
-                        <button>Next</button>
-                        <button>Quit</button>
-                    </div>
+            <div className="questions">
+                <div>
+                    <p>
+                        <span>{currentQuestionIndex + 1} of {numberOfQuestions}</span>
+                        <span className="right">{time.minutes}:{time.seconds}</span>
+                    </p>
                 </div>
-            </Fragment>
+                <h5>{currentQuestion.question}</h5>
+                <div className="options-container">
+                    <p onClick={this.handleOptionClick} className="option">{currentQuestion.optionA}</p>
+                    <p onClick={this.handleOptionClick} className="option">{currentQuestion.optionB}</p>
+                </div>
+                <div className="options-container">
+                    <p onClick={this.handleOptionClick} className="option">{currentQuestion.optionC}</p>
+                    <p onClick={this.handleOptionClick} className="option">{currentQuestion.optionD}</p>
+                </div>
+            </div>
         );
     }
 }
