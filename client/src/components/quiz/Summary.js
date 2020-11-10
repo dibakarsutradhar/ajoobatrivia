@@ -19,6 +19,9 @@ class Summary extends Component {
         const { state } = this.props.location;
         if(state) {
             this.setState({
+                name: state.name,
+                email: state.email,
+                totalScore: state.totalScore,
                 score: state.score,
                 numberOfQuestions: state.numberOfQuestions,
                 numberOfAnsQuestions: state.numberOfAnsQuestions,
@@ -32,6 +35,7 @@ class Summary extends Component {
     render() {
         const { state } = this.props.location;
         let stats;
+        let button;
         let remark;
         const userScore = this.state.score;
 
@@ -53,6 +57,7 @@ class Summary extends Component {
                     <div className="container stats">
                         <h5 className="txt-center">{remark}</h5>
                         <h2 className="txt-center">Your Score: {this.state.score.toFixed(0)}</h2>
+
                         <span className="stat left">Total number of questions: </span>
                         <span className="right">{this.state.numberOfQuestions}</span><br />
 
@@ -65,11 +70,25 @@ class Summary extends Component {
                         <span className="stat left">Number of Wrong Answers: </span>
                         <span className="right">{this.state.wrongAnswers}</span>
                     </div>
-                    <div className="txt-center width-100 margin-top-20 card-content">
-                        <Link to="/" className="btn waves-effect btn-yellow ">Go to Home</Link>
-                    </div>
                 </Fragment>
             );
+            if(userScore >= 11) {
+                button = (
+                    <div className="container stats">
+                        <div className="txt-center width-100 margin-top-20 card-content">
+                            <Link to="/round2" className="btn waves-effect btn-yellow ">Go to Round 2</Link>
+                        </div>
+                    </div>
+                )
+            } else {
+                button = (
+                    <div className="container stats">
+                        <div className="txt-center width-100 margin-top-20 card-content">
+                            <Link to="/" className="btn waves-effect btn-yellow ">Go to Home</Link>
+                        </div>
+                    </div>
+                )
+            }
         } else {
             stats = (
                 <section>
@@ -98,6 +117,7 @@ class Summary extends Component {
                                 <div className="card margin-auto">
                                     <div className="card-content">
                                         {stats}
+                                        {button}
                                     </div>
                                 </div>
                             </div>
