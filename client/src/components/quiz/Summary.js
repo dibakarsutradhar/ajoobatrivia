@@ -1,6 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
 
+import BannerTitle from '../../images/banner-title.png';
+
 class Summary extends Component {
     constructor(props) {
         super(props);
@@ -18,8 +20,8 @@ class Summary extends Component {
         if(state) {
             this.setState({
                 score: state.score,
-                numberOfQustions: state.numberOfQustions,
-                numberOfAnsQustions: state.numberOfAnsQustions,
+                numberOfQuestions: state.numberOfQuestions,
+                numberOfAnsQuestions: state.numberOfAnsQuestions,
                 correctAnswers: state.correctAnswers,
                 wrongAnswers: state.wrongAnswers
             });
@@ -50,7 +52,7 @@ class Summary extends Component {
                     <h1>Quiz has Ended!</h1>
                     <div className="container stats">
                         <h4>{remark}</h4>
-                        <h2>Your Score: {this.state.score.toFixed(0)}&#37;</h2>
+                        <h2>Your Score: {this.state.score.toFixed(0)}</h2>
                         <span className="stat left">Total number of questions: </span>
                         <span className="right">{this.state.numberOfQuestions}</span><br />
 
@@ -86,9 +88,20 @@ class Summary extends Component {
         }
         
         return (
-            <div className="quiz-summary">
-                {stats}
-            </div>
+            <body className="subpage">
+                <div className="main">
+                    <section className="banner-img valign-wrapper ">
+                        <div className="banner-title">
+                            <Link to="/">
+                                <img src={BannerTitle} alt="Ajooba Trivia" className=""></img>
+                            </Link> {/* redirect to home page */}
+                        </div>
+                    </section>
+                    <div className="quiz-summary">
+                        {stats}
+                    </div>
+                </div>
+            </body>
         )
     }
 };
