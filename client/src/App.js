@@ -15,7 +15,6 @@ import Login from "./components/auth/Login";
 import WaitingLobby from "./components/layout/WaitingLobby";
 import Footer from "./components/layout/Footer";
 import PrivateRoute from "./components/private-route/PrivateRoute";
-import Dashboard from "./components/dashboard/Dashboard";
 import Play from "./components/quiz/Play";
 import Summary from "./components/quiz/Summary";
 
@@ -50,10 +49,9 @@ class App extends Component {
             <Route exact path="/" component={Landing} />
             <Route exact path="/Login" component={Login} />
             <Route exact path="/WaitingLobby" component={WaitingLobby} />
-            <Route exact path="/Play" component={Play} />
-            <Route exact path="/Summary" component={Summary} />
             <Switch>
-              <PrivateRoute exact path="/Dashboard" component={Dashboard} />
+              <PrivateRoute exact path="/Play" component={Play} />
+              <PrivateRoute exact path="/Summary" component={Summary} />
             </Switch>
             <Footer />
           </div>
