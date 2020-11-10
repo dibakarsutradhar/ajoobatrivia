@@ -11,9 +11,8 @@ import './App.css';
 
 import Navbar from "./components/layout/Navbar";
 import Landing from "./components/layout/Landing";
-import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
-import Successful from "./components/layout/Successful";
+import WaitingLobby from "./components/layout/WaitingLobby";
 import Footer from "./components/layout/Footer";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 import Dashboard from "./components/dashboard/Dashboard";
@@ -49,9 +48,8 @@ class App extends Component {
           <div className="App">
             <Navbar />
             <Route exact path="/" component={Landing} />
-            <Route exact path="/Register" component={Register} />
             <Route exact path="/Login" component={Login} />
-            <Route exact path="/Successful" component={Successful} />
+            <Route exact path="/WaitingLobby" component={WaitingLobby} />
             <Route exact path="/Play" component={Play} />
             <Route exact path="/Summary" component={Summary} />
             <Switch>
