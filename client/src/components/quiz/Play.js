@@ -72,7 +72,7 @@ class Play extends Component {
         });
 
         this.setState(prevState => ({
-            score: prevState + 1,
+            score: prevState.score + 1,
             correctAnswers: prevState.correctAnswers + 1,
             currentQuestionIndex: prevState.currentQuestionIndex + 1,
             numberOfAnsQuestions: prevState.numberOfAnsQuestions + 1
@@ -149,7 +149,7 @@ class Play extends Component {
         };
         console.log(playerStats);
         setTimeout(() => {
-            this.props.history.push('/');
+            this.props.history.push('/Summary');
         }, 1000);
     };
 
