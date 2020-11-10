@@ -6,7 +6,7 @@ import classnames from 'classnames';
 
 import BannerTitle from '../../images/banner-title.png';
 
-import questions from './qustions.json';
+import questions from './finalQustions.json';
 
 class Play extends Component {
     constructor() {
@@ -112,7 +112,7 @@ class Play extends Component {
     };
 
     startTimer = () => {
-        const countDownTime = Date.now() + 300000;
+        const countDownTime = Date.now() + 1200000;
         this.interval = setInterval(() => {
             const now = new Date();
             const distance = countDownTime - now;
@@ -143,7 +143,7 @@ class Play extends Component {
     };
 
     endGame = () => {
-        alert('Game has ended !');
+        alert('GAME OVER!!');
         const { state } = this;
         const playerStats = {
             score: state.score,
@@ -153,7 +153,7 @@ class Play extends Component {
             wrongAnswers: state.wrongAnswers
         };
         setTimeout(() => {
-            this.props.history.push('/Summary', playerStats);
+            this.props.history.push('/summary', playerStats);
         }, 1000);
     };
 

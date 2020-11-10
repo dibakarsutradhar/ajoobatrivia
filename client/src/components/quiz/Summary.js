@@ -19,9 +19,6 @@ class Summary extends Component {
         const { state } = this.props.location;
         if(state) {
             this.setState({
-                name: state.name,
-                email: state.email,
-                totalScore: state.totalScore,
                 score: state.score,
                 numberOfQuestions: state.numberOfQuestions,
                 numberOfAnsQuestions: state.numberOfAnsQuestions,
@@ -39,9 +36,9 @@ class Summary extends Component {
         let remark;
         const userScore = this.state.score;
 
-        if (userScore < 10) {
+        if (userScore < 45) {
             remark = 'Better luck next time!';
-        } else if (userScore >= 11) {
+        } else if (userScore >= 46) {
             remark = 'You are an absolute legend. Welcome to Round 2!';
         } else {
             remark = 'We all hit duck sometimes';
@@ -72,11 +69,11 @@ class Summary extends Component {
                     </div>
                 </Fragment>
             );
-            if(userScore >= 11) {
+            if(userScore >= 46) {
                 button = (
                     <div className="container stats">
                         <div className="txt-center width-100 margin-top-20 card-content">
-                            <Link to="/round2" className="btn waves-effect btn-yellow ">Go to Round 2</Link>
+                            <Link to="https://discord.gg/ZjsMpAt8MY" className="btn waves-effect btn-yellow ">Go to Round 2</Link>
                         </div>
                     </div>
                 )
