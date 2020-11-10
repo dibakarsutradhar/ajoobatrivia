@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import isEmpty from 'is-empty';
 import { Link } from 'react-router-dom';
 import M from 'materialize-css';
+import classnames from 'classnames';
 
 import BannerTitle from '../../images/banner-title.png';
 
@@ -133,7 +134,8 @@ class Play extends Component {
                 this.setState({
                     time: {
                         minutes,
-                        seconds
+                        seconds,
+                        distance
                     }
                 });
             }
@@ -150,7 +152,6 @@ class Play extends Component {
             correctAnswers: state.correctAnswers,
             wrongAnswers: state.wrongAnswers
         };
-        console.log(playerStats);
         setTimeout(() => {
             this.props.history.push('/Summary', playerStats);
         }, 1000);
@@ -181,37 +182,41 @@ class Play extends Component {
                                 <br />
                                 <div className="card margin-auto margin-top-0" style={{ 'max-width': '600px' }}>
                                     <div className="card-content">
+                                    <div className="timer-container">
+                                        <p>
+                                            <span className="left" style={{ float: 'left' }}>{currentQuestionIndex + 1} of {numberOfQuestions}</span>
+                                            <span className={classnames('right valid', {
+                                                'warning': time.distance <= 120000,
+                                                'invalid': time.distance < 30000
+                                            })}>
+                                                {time.minutes}:{time.seconds}
+                                            <span  className="mdi mdi-clock-outline mdi-24px"></span></span>
+                                        </p>
+                                    </div>
                                         <div className="progress">
                                             <div className="determinate" style={{ 'width': '70%' }}></div>
                                         </div> {/* use js to update the progress. */}
-                                        <div>
-                                            <p className="txt-right">timer</p>
-                                        </div>
                                         <form method="post" className="row" action="success.html">
                                             <h4 className="txt-center">{currentQuestion.question}</h4>
                                             <div className="col l6 s12 margin-bottom-0 margin-top-10">
                                                 <p className="padding-top-5">
                                                 <label className="margin-right-20">
-                                                    <input onClick={this.handleOptionClick} name="group1" type="radio"  value ="yes"/>
-                                                    <span>{currentQuestion.optionA}</span>
+                                                    <input name="group1" type="radio"  value ="yes"/>
+                                                    <span onClick={this.handleOptionClick}><b>{currentQuestion.optionA}</b></span>
                                                 </label>
                                                 <label className="margin-right-20">
-                                                    <input onClick={this.handleOptionClick} name="group1" type="radio" value="no" />
-                                                    <span>{currentQuestion.optionB}</span>
+                                                    <input name="group1" type="radio" value="no" />
+                                                    <span onClick={this.handleOptionClick}><b>{currentQuestion.optionB}</b></span>
                                                 </label>
                                                 <label className="margin-right-20">
-                                                    <input onClick={this.handleOptionClick} name="group1" type="radio" value="no" />
-                                                    <span>{currentQuestion.optionC}</span>
+                                                    <input name="group1" type="radio" value="no" />
+                                                    <span onClick={this.handleOptionClick}><b>{currentQuestion.optionC}</b></span>
                                                 </label>
                                                 <label className="margin-right-20">
-                                                    <input onClick={this.handleOptionClick} name="group1" type="radio" value="no" />
-                                                    <span>{currentQuestion.optionD}</span>
+                                                    <input name="group1" type="radio" value="no" />
+                                                    <span onClick={this.handleOptionClick}><b>{currentQuestion.optionD}</b></span>
                                                 </label>
                                                 </p>
-                                            </div>
-                                            <div className="input-field col s12 margin-bottom-0 txt-center">
-                                                <button className="btn waves-effect waves-light btn-yellow " type="submit" name="action">Next
-                                                </button>
                                             </div>
                                         </form>
                                     </div>
@@ -220,24 +225,6 @@ class Play extends Component {
                         </section>
                     </main>
                 </div>
-                
-                    <div className="questions">
-                        <div>
-                            <p>
-                                <span>{currentQuestionIndex + 1} of {numberOfQuestions}</span>
-                                <span className="right">{time.minutes}:{time.seconds}</span>
-                            </p>
-                        </div>
-                        <h5>{currentQuestion.question}</h5>
-                        <div className="options-container">
-                            <p onClick={this.handleOptionClick} className="option">{currentQuestion.optionA}</p>
-                            <p onClick={this.handleOptionClick} className="option">{currentQuestion.optionB}</p>
-                        </div>
-                        <div className="options-container">
-                            <p onClick={this.handleOptionClick} className="option">{currentQuestion.optionC}</p>
-                            <p onClick={this.handleOptionClick} className="option">{currentQuestion.optionD}</p>
-                        </div>
-                    </div>
             </body>
         );
     }

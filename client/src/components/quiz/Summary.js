@@ -49,10 +49,10 @@ class Summary extends Component {
                     <div style={{ textAlign: 'center' }}>
                         <span className=""></span>
                     </div>
-                    <h1>Quiz has Ended!</h1>
+                    <h4 className="txt-center">Quiz has Ended!</h4>
                     <div className="container stats">
-                        <h4>{remark}</h4>
-                        <h2>Your Score: {this.state.score.toFixed(0)}</h2>
+                        <h5 className="txt-center">{remark}</h5>
+                        <h2 className="txt-center">Your Score: {this.state.score.toFixed(0)}</h2>
                         <span className="stat left">Total number of questions: </span>
                         <span className="right">{this.state.numberOfQuestions}</span><br />
 
@@ -65,24 +65,18 @@ class Summary extends Component {
                         <span className="stat left">Number of Wrong Answers: </span>
                         <span className="right">{this.state.wrongAnswers}</span>
                     </div>
-                    <section>
-                        <ul>
-                            <li>
-                                <Link to ="/">Back to Home</Link>
-                            </li>
-                        </ul>
-                    </section>
+                    <div className="txt-center width-100 margin-top-20 card-content">
+                        <Link to="/" className="btn waves-effect btn-yellow ">Go to Home</Link>
+                    </div>
                 </Fragment>
             );
         } else {
             stats = (
                 <section>
-                    <h1 className="no-stats">No Statistics Available</h1>
-                    <ul>
-                        <li>
-                            <Link to ="/">Back to Home</Link>
-                        </li>
-                    </ul>
+                    <h4 className="txt-center">No Statistics Available</h4>
+                    <div className="txt-center width-100 margin-top-20">
+                        <Link to="/" className="btn waves-effect btn-yellow ">Go to Home</Link>
+                    </div>
                 </section>
             );
         }
@@ -97,9 +91,18 @@ class Summary extends Component {
                             </Link> {/* redirect to home page */}
                         </div>
                     </section>
-                    <div className="quiz-summary">
-                        {stats}
-                    </div>
+                    <main className="container">
+                        <section className="row">
+                            <div className="col s12">
+                                <br/><br/>
+                                <div className="card margin-auto">
+                                    <div className="card-content">
+                                        {stats}
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </main>
                 </div>
             </body>
         )
