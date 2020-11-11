@@ -33,6 +33,9 @@ class Play extends Component {
         // const { questions, currentQuestion, nextQuestion } = this.state;
         this.displayQuestions(this.state.questions, this.state.currentQuestion, this.state.nextQuestion);
         this.startTimer();
+        window.onbeforeunload = function() {
+            return "Reloading this page will forfeit the game.";
+         };
     };
 
     componentWillUnmount() {
@@ -66,6 +69,38 @@ class Play extends Component {
         } else {
             this.wrongAnswer();
         }
+    };
+
+    handleNextButtonClick = () => {
+        if (this.state.nextQuestion !== undefined) {
+            this.setState(prevState => ({
+                currentQuestionIndex: prevState.currentQuestionIndex + 1
+            }), () => {
+                this.displayQuestions(this.state.state, this.state.currentQuestion, this.state.nextQuestion);
+            });
+        }
+    };
+
+    handleQuitButtonClick = () => {
+        if (window.confirm('Are you sure you want to quit?')) {
+            this.props.history.push('/');
+        }
+    };
+
+    handleButtonClick = (e) => {
+        switch (e.target.id) {
+            case 'next-button':
+                this.handleNextButtonClick();
+                break;
+
+            case 'quit-button':
+                this.handleQuitButtonClick();
+                break;
+
+            default:
+                break;
+        }
+        
     };
 
     correctAnswer = () => {
@@ -112,7 +147,7 @@ class Play extends Component {
     };
 
     startTimer = () => {
-        const countDownTime = Date.now() + 1200000;
+        const countDownTime = Date.now() + 1080000;
         this.interval = setInterval(() => {
             const now = new Date();
             const distance = countDownTime - now;
@@ -167,6 +202,13 @@ class Play extends Component {
 
         return (
             <body className="subpage">
+                <script type="text/javascript">
+                    function preventBack() {
+                        window.history.forward()
+                    }
+                    setTimeout("preventBack()", 0);
+                    window.onunload = function() { null };
+                </script>
                 <div className="main">
                     <section className="banner-img valign-wrapper ">
                         <div className="banner-title">
@@ -217,6 +259,14 @@ class Play extends Component {
                                                     <span onClick={this.handleOptionClick}><b>{currentQuestion.optionD}</b></span>
                                                 </label>
                                                 </p>
+                                            </div>
+                                            <div className="input-field col s12 margin-bottom-0 txt-center">
+                                                <span className="btn waves-effect waves-light btn-yellow " id="next-button" onClick={this.handleButtonClick}>Next
+                                                </span>
+                                            </div>
+                                            <div className="input-field col s12 margin-bottom-0 txt-center">
+                                                <span className="btn waves-effect waves-light btn-yellow " id="quit-button" onClick={this.handleButtonClick}>Quit
+                                                </span>
                                             </div>
                                         </form>
                                     </div>

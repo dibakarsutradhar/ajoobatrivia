@@ -7,7 +7,9 @@ import { Link } from 'react-router-dom';
 import BannerTitle from '../../images/banner-title.png';
 
 class WaitingLobby extends Component {
+
     render() {
+
         return (
             <body className="subpage">
                 <div className="main">
@@ -50,6 +52,8 @@ class WaitingLobby extends Component {
                         </section>
                     </main>
                 </div>
+                
+                
             </body>
         )
     };
