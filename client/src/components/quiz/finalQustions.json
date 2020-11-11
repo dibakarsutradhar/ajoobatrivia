@@ -5,8 +5,7 @@
         "optionB": "The Chronicles of Narnia",
         "optionC": "The Lord of the Rings",
         "optionD": "Eragon",
-        "answer": "The Lord of the Rings",
-        "score": 1
+        "answer": "The Lord of the Rings"
     },
 
     {
@@ -15,8 +14,7 @@
         "optionB": "Hexagon",
         "optionC": "Pentagon",
         "optionD": "Rectangle",
-        "answer": "Pentagon",
-        "score": 1
+        "answer": "Pentagon"
     },
 
      {
@@ -25,8 +23,7 @@
         "optionB": "The Shawshank Redemption",
         "optionC": "THe Pursuit of Happiness",
         "optionD": "The 40 year old of Virgin",
-        "answer": "Forest Gump",
-        "score": 2
+        "answer": "Forest Gump"
     },
 
     {
@@ -35,8 +32,7 @@
         "optionB": "In the ankle",
         "optionC": "In the thigh",
         "optionD": "In the shoulder",
-        "answer": "In the basin",
-        "score": 2
+        "answer": "In the basin"
     },
 
     {
@@ -45,8 +41,7 @@
         "optionB": "Honey water with mint",
         "optionC": "Rose water",
         "optionD": "Urine",
-        "answer": "Urine",
-        "score": 3
+        "answer": "Urine"
     },
 
     {
@@ -54,8 +49,8 @@
         "optionA": "Candela",
         "optionB": "Ampere",
         "optionC": "Volt",
-        "answer": "Volt",
-        "score": 3
+        "optionD": "Mole",
+        "answer": "Vold"
     },
 
     {
@@ -64,8 +59,7 @@
         "optionB": "Sweden",
         "optionC": "Switzerland",
         "optionD": "Finland",
-        "answer": "Finland",
-        "score": 1
+        "answer": "Finland"
     },
 
     {
@@ -74,8 +68,7 @@
         "optionB": "Wolf",
         "optionC": "Cat",
         "optionD": "Elephant",
-        "answer": "Cat",
-        "score": 1
+        "answer": "Cat"
     },
 
     {
@@ -84,8 +77,7 @@
         "optionB": "Sudan",
         "optionC": "Namibia",
         "optionD": "Niger",
-        "answer": "Namibia",
-        "score": 2
+        "answer": "Namibia"
     },
 
     {
@@ -94,8 +86,7 @@
         "optionB": "B-24 Liberator",
         "optionC": "B-25 Mitchell",
         "optionD": "Fatzaka",
-        "answer": "B-25 Mitchell",
-        "score": 2
+        "answer": "B-25 Mitchell"
     },
 
     {
@@ -104,8 +95,7 @@
         "optionB": "8 times",
         "optionC": "10 times",
         "optionD": "15 times",
-        "answer": "12 times",
-        "score": 5
+        "answer": "12 times"
     },
 
     {
@@ -114,8 +104,7 @@
         "optionB": "Israel",
         "optionC": "Japan",
         "optionD": "Turkey",
-        "answer": "Israel",
-        "score": 3
+        "answer": "Israel"
     },
 
     {
@@ -124,8 +113,7 @@
         "optionB": "Angina",
         "optionC": "Arthralgia",
         "optionD": "Pneumonia",
-        "answer": "Angina",
-        "score": 2
+        "answer": "Angina"
     },
 
     {
@@ -134,8 +122,7 @@
         "optionB": "Isaac Newton",
         "optionC": "Paul Erdős",
         "optionD": "Aryabhata",
-        "answer": "Paul Erdős",
-        "score": 1
+        "answer": "Paul Erdős"
     },
 
     {
@@ -144,8 +131,7 @@
         "optionB": "a^2 + c^2 = b^2",
         "optionC": "A = b * h",
         "optionD": "a^2 + b^2 = c^2",
-        "answer": "a^2 + b^2 = c^2",
-        "score": 1
+        "answer": "a^2 + b^2 = c^2"
     },
 
     {
@@ -154,8 +140,7 @@
         "optionB": "Belgium",
         "optionC": "France",
         "optionD": "Great Britain",
-        "answer": "France",
-        "score": 3
+        "answer": "France"
     },
 
     {
@@ -164,8 +149,7 @@
         "optionB": "Shark",
         "optionC": "Starfish",
         "optionD": "Crab",
-        "answer": "Whale",
-        "score": 3
+        "answer": "Whale"
     },
 
     {
@@ -174,8 +158,7 @@
         "optionB": "Ethiopia",
         "optionC": "Guinea",
         "optionD": "Cabo Verde",
-        "answer": "Ethiopia",
-        "score": 1
+        "answer": "Ethiopia"
     },
 
     {
@@ -184,8 +167,7 @@
         "optionB": "Adventure Time",
         "optionC": "Doctor Who",
         "optionD": "Futurama",
-        "answer": "Rick and Morty",
-        "score": 1
+        "answer": "Rick and Morty"
     },
 
     {
@@ -194,8 +176,7 @@
         "optionB": "Week 16",
         "optionC": "Week 24",
         "optionD": "Week 30",
-        "answer": "Week 8",
-        "score": 2
+        "answer": "Week 8"
     },
 
 
@@ -205,8 +186,7 @@
         "optionB": "Quenches thirst",
         "optionC": "Seasoning",
         "optionD": "Washing Dishes",
-        "answer": "Cures Disease",
-        "score": 2
+        "answer": "Cures Disease"
     },
 
     {
@@ -215,8 +195,7 @@
         "optionB": "9",
         "optionC": "5",
         "optionD": "3",
-        "answer": "9",
-        "score": 5
+        "answer": "9"
     },
 
     {
@@ -225,8 +204,7 @@
         "optionB": "He thought it was a star",
         "optionC": "Hid his discovery",
         "optionD": "He didn'tknow it existed",
-        "answer": "He thought it was a star",
-        "score": 1
+        "answer": "He thought it was a star"
     },
 
     {
@@ -235,8 +213,7 @@
         "optionB": "Adolf Hitler",
         "optionC": "Joseph Stalin",
         "optionD": "Benito Mussolini",
-        "answer": "Winston Churchill",
-        "score": 1
+        "answer": "Winston Churchill"
     },
 
     {
@@ -245,8 +222,7 @@
         "optionB": "Cannoli",
         "optionC": "The Crostata",
         "optionD": "The bruschetta",
-        "answer": "The bruschetta",
-        "score": 1
+        "answer": "The bruschetta"
     },
 
     {
@@ -255,8 +231,7 @@
         "optionB": "Joint Organization",
         "optionC": "Federation",
         "optionD": "NATO",
-        "answer": "UNESCO",
-        "score": 2
+        "answer": "UNESCO"
     },
 
     {
@@ -265,8 +240,7 @@
         "optionB": "United Arab Emirates",
         "optionC": "Saudi Arabia",
         "optionD": "Bahrain",
-        "answer": "Saudi Arabia",
-        "score": 2
+        "answer": "Saudi Arabia"
     },
 
     {
@@ -275,8 +249,7 @@
         "optionB": "Expanding",
         "optionC": "Contracting",
         "optionD": "Stationary",
-        "answer": "Expanding",
-        "score": 3
+        "answer": "Expanding"
     },
 
     {
@@ -285,8 +258,7 @@
         "optionB": "3",
         "optionC": "4/5",
         "optionD": "0",
-        "answer": "6",
-        "score": 3
+        "answer": "6"
     },
 
     {
@@ -295,8 +267,7 @@
         "optionB": "7",
         "optionC": "25",
         "optionD": "5",
-        "answer": "10",
-        "score": 3
+        "answer": "10"
     },
 
     {
@@ -305,8 +276,7 @@
         "optionB": "The Road Trip",
         "optionC": "The Expedition",
         "optionD": "Thalassotherapy",
-        "answer": "The Odyssey",
-        "score": 1
+        "answer": "The Odyssey"
     },
 
     {
@@ -315,8 +285,7 @@
         "optionB": "Italy",
         "optionC": "Netherlands",
         "optionD": "Chili",
-        "answer": "Netherlands",
-        "score": 1
+        "answer": "Netherlands"
     }, 
 
     {
@@ -326,7 +295,7 @@
         "optionC": "Snakes",
         "optionD": "Spider",
         "answer": "Spider",
-        "score": 5
+        "": 5
     },
 
     {
@@ -336,7 +305,7 @@
         "optionC": "Mobile Legends Bang Bang",
         "optionD": "World of Warcraft",
         "answer": "League of Legends",
-        "score": 1
+        "": 1
     },
 
     {
@@ -346,7 +315,7 @@
         "optionC": "Sudden Fall",
         "optionD": "Stairs",
         "answer": "Stairs",
-        "score": 1
+        "": 1
     },
 
     {
@@ -356,7 +325,7 @@
         "optionC": "Fred’s Mother",
         "optionD": "Shaggy’s Uncle",
         "answer": "Daphne’s Father",
-        "score": 3
+        "": 3
     },
 
     {
@@ -366,7 +335,7 @@
         "optionC": "53",
         "optionD": "108",
         "answer": "53",
-        "score": 3
+        "": 3
     },
 
     {
@@ -376,7 +345,7 @@
         "optionC": "Straights of Malacca",
         "optionD": "Suez Canal",
         "answer": "English Channel",
-        "score": 2
+        "": 2
     },
 
     {
@@ -386,7 +355,7 @@
         "optionC": "Harry Potter and the Order of the Phoenix",
         "optionD": "Harry Potter and the Gauntlet",
         "answer": "Harry Potter and the Order of the Phoenix",
-        "score": 2
+        "": 2
     },
 
     {
@@ -396,7 +365,7 @@
         "optionC": "Cat",
         "optionD": "Shrimp",
         "answer": "Fish",
-        "score": 2
+        "": 2
     },
 
     {
@@ -406,7 +375,7 @@
         "optionC": "Rose, Rosemary, Lavender",
         "optionD": "Turmeric, Rosemary, Iris",
         "answer": "Rose, Ylang-ylang, Iris",
-        "score": 3
+        "": 3
     },
 
     {
@@ -416,7 +385,7 @@
         "optionC": "Sign of tired and exhausted body",
         "optionD": "Feeling sleepy",
         "answer": "Inhale oxygen in time to expel carbon dioxide",
-        "score": 1
+        "": 1
     },
 
     {
@@ -426,7 +395,7 @@
         "optionC": "Carl Sagan",
         "optionD": "Neil deGrasse Tyson",
         "answer": "Steven Hawking",
-        "score": 1
+        "": 1
     },
 
     {
@@ -436,7 +405,7 @@
         "optionC": "Japan",
         "optionD": "China",
         "answer": "Japan",
-        "score": 5
+        "": 5
     },
 
     {
@@ -446,7 +415,7 @@
         "optionC": "Dragon Fruit",
         "optionD": "Apricot",
         "answer": "Apricot",
-        "score": 1
+        "": 1
     },
 
     {
@@ -456,7 +425,7 @@
         "optionC": "Butanol",
         "optionD": "Cougor Bourbon",
         "answer": "Ethanol",
-        "score": 1
+        "": 1
     },
 
     {
@@ -466,7 +435,7 @@
         "optionC": "flv",
         "optionD": "aac",
         "answer": "mkv",
-        "score": 2
+        "": 2
     },
 
     {
@@ -476,7 +445,7 @@
         "optionC": "1946",
         "optionD": "1972",
         "answer": "1945",
-        "score": 2
+        "": 2
     },
 
     {
@@ -486,7 +455,7 @@
         "optionC": "1946",
         "optionD": "1694",
         "answer": "1694",
-        "score": 3
+        "": 3
     },
 
     {
@@ -496,7 +465,7 @@
         "optionC": "Greece",
         "optionD": "St.Peter",
         "answer": "Vatican City",
-        "score": 1
+        "": 1
     },
 
     {
@@ -506,7 +475,7 @@
         "optionC": "Weah",
         "optionD": "Essien",
         "answer": "Weah",
-        "score": 3
+        "": 3
     },
 
     {
@@ -516,7 +485,7 @@
         "optionC": "15",
         "optionD": "6",
         "answer": "6",
-        "score": 3
+        "": 3
     },
 
     {
@@ -526,7 +495,7 @@
         "optionC": "Respiratory system",
         "optionD": "Reproductive system",
         "answer": "Cardiovascular system",
-        "score": 2
+        "": 2
     },
 
     {
@@ -536,7 +505,7 @@
         "optionC": "750 million",
         "optionD": "300 million",
         "answer": "300 million",
-        "score": 3
+        "": 3
     },
 
     {
@@ -546,7 +515,7 @@
         "optionC": "Franklin D Roosevelt",
         "optionD": "John Fitzgerald KENNEDY",
         "answer": "John Fitzgerald KENNEDY",
-        "score": 5
+        "": 5
     }
 
 

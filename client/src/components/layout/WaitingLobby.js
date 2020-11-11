@@ -71,14 +71,15 @@ class WaitingLobby extends Component {
                                 <br/><br/>
                                 <div className="card margin-auto">
                                     <div className="card-content">
-                                        <h4 className="txt-center">Waiting Lobby</h4>
+                                        <h4 className="txt-center">Game Lobby</h4>
                                         <br/>
-                                        <p className="txt-justify">You will be able to compete in the event on <b>11 November 2020 </b> 
-                                        at <b>2:00pm (Malaysian Standard Time)</b>. In order to play, kindly log in with your <b>registered email</b> and <b>password</b>. Follow <a href="https://instagram.com/ajoobatrivia" className="txt-bold">@ajoobatrivia</a>  on <a href="https://instagram.com/ajoobatrivia" className="txt-bold">Instagram</a> for updates.</p>
+                                        <p className="txt-center">The Quiz will start right after you <b>LOGIN </b><br />
+                                        In order to play, kindly log in with your <b>registered email</b> and <b>password</b>.</p>
                                         <br/>
-                                        <p className="txt-justify">In the mean time, you can go to our home page and review rules and regulations, how to play and other information</p>
+                                        <p className="txt-center">You'll have <b>20 secs</b> for each questions in <b>ROUND 1</b></p>
+                                        <p className="txt-center">The game route will be disabled at <b>2:50 pm MST</b></p> <br />
                                         <div className="txt-center width-100 margin-top-20">
-                                            <Link to="/" className="btn waves-effect btn-yellow ">Go to Home</Link>
+                                            <Link to="/" className="btn waves-effect btn-yellow ">HOME</Link>
                                         </div>
                                     </div>
                                 </div>
