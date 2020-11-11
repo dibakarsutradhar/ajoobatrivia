@@ -79,7 +79,7 @@ class WaitingLobby extends Component {
                                         <p className="txt-center">You'll have <b>20 secs</b> for each questions in <b>ROUND 1</b></p>
                                         <p className="txt-center">The game route will be disabled at <b>2:50 pm MST</b></p> <br />
                                         <div className="txt-center width-100 margin-top-20">
-                                            <Link to="/" className="btn waves-effect btn-yellow ">HOME</Link>
+                                            <Link to="/login" className="btn waves-effect btn-yellow ">LOGIN</Link>
                                         </div>
                                     </div>
                                 </div>

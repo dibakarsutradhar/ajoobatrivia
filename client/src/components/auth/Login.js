@@ -103,7 +103,7 @@ class Login extends Component {
                                                 </span>
                                             </div>
                                             <div className="input-field col s12 margin-bottom-0 txt-center">
-                                                <button className="btn waves-effect waves-light btn-yellow " type="submit" name="action">Login<i className="material-icons right">send</i>
+                                                <button className="btn waves-effect waves-light btn-yellow " type="submit" name="action">STAR GAME<i className="material-icons right">send</i>
                                                 </button> {/* triggers model */}
                                             </div>
                                         </form> {/* contact form end */}
