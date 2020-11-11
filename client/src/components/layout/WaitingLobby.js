@@ -7,9 +7,43 @@ import { Link } from 'react-router-dom';
 import BannerTitle from '../../images/banner-title.png';
 
 class WaitingLobby extends Component {
+    /*
+    timer = () => {
+        const [timerDays, setTimerDays] = useState('00');
+        const [timerHours, setTimerHours] = useState('00');
+        const [timerMinutes, setTimerMinutes] = useState('00');
+        const [timerSeconds, setTimerSeconds] = useState('00');
+
+        let interval = useRef();
+
+        const startTimer = () => {
+            const countdownDate = new Date('Nov 11, 2020 11:59:59').getTime();
+
+            interval = setInterval(() => {
+                const now = new Date();
+                const distance = countdownDate - now;
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60)));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                if(distance < 0) {
+                    // stop out timer
+                    clearInterval(interval.current);
+                } else {
+                    // update timer
+                    setTimerDays(days);
+                    setTimerHours(hours);
+                    setTimerMinutes(minutes);
+                    setTimerSeconds(seconds);
+                }
+            }, 1000);
+        }
+    };
+    */
 
     render() {
-
         return (
             <body className="subpage">
                 <div className="main">

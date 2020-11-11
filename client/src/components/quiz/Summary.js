@@ -81,7 +81,7 @@ class Summary extends Component {
                 button = (
                     <div className="container stats">
                         <div className="txt-center width-100 margin-top-20 card-content">
-                            <Link to="https://discord.gg/ZjsMpAt8MY" className="btn waves-effect btn-yellow ">Go to Round 2</Link>
+                            <a href="https://discord.gg/ZjsMpAt8MY" className="btn waves-effect btn-yellow ">Go to Round 2</a>
                         </div>
                     </div>
                 )
