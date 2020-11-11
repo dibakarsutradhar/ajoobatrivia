@@ -26,18 +26,26 @@ class Summary extends Component {
                 wrongAnswers: state.wrongAnswers
             });
         }
+        window.onbeforeunload = function() {
+            return "Reloading this page will forfeit the game.";
+         };
     };
 
 
     render() {
         const { state } = this.props.location;
         let stats;
+        let button;
         let remark;
         const userScore = this.state.score;
 
-        if (userScore < 10) {
+        if (userScore < 40) {
             remark = 'Better luck next time!';
-        } else if (userScore >= 11) {
+        } else if (userScore >= 41 && userScore < 45) {
+            remark = "You hit the waiting Spot. You are in WAITING LIST 2";
+        } else if (userScore >= 46 && userScore <48) {
+            remark = "You hit the waiting Spot. You are in WAITING LIST 1";
+        } else if (userScore >= 49) {
             remark = 'You are an absolute legend. Welcome to Round 2!';
         } else {
             remark = 'We all hit duck sometimes';
@@ -50,9 +58,11 @@ class Summary extends Component {
                         <span className=""></span>
                     </div>
                     <h4 className="txt-center">Quiz has Ended!</h4>
+                    <h4 className="txt-center">Please, keep a Screenshot of this page.</h4>
                     <div className="container stats">
                         <h5 className="txt-center">{remark}</h5>
                         <h2 className="txt-center">Your Score: {this.state.score.toFixed(0)}</h2>
+
                         <span className="stat left">Total number of questions: </span>
                         <span className="right">{this.state.numberOfQuestions}</span><br />
 
@@ -65,11 +75,25 @@ class Summary extends Component {
                         <span className="stat left">Number of Wrong Answers: </span>
                         <span className="right">{this.state.wrongAnswers}</span>
                     </div>
-                    <div className="txt-center width-100 margin-top-20 card-content">
-                        <Link to="/" className="btn waves-effect btn-yellow ">Go to Home</Link>
-                    </div>
                 </Fragment>
             );
+            if(userScore >= 46) {
+                button = (
+                    <div className="container stats">
+                        <div className="txt-center width-100 margin-top-20 card-content">
+                            <Link to="https://discord.gg/ZjsMpAt8MY" className="btn waves-effect btn-yellow ">Go to Round 2</Link>
+                        </div>
+                    </div>
+                )
+            } else {
+                button = (
+                    <div className="container stats">
+                        <div className="txt-center width-100 margin-top-20 card-content">
+                            <Link to="/" className="btn waves-effect btn-yellow ">Go to Home</Link>
+                        </div>
+                    </div>
+                )
+            }
         } else {
             stats = (
                 <section>
@@ -98,6 +122,7 @@ class Summary extends Component {
                                 <div className="card margin-auto">
                                     <div className="card-content">
                                         {stats}
+                                        {button}
                                     </div>
                                 </div>
                             </div>

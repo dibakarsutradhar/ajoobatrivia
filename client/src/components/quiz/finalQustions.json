@@ -1,0 +1,555 @@
+[
+    {
+        "question": "Gollum was part of which of the famous film/book?",
+        "optionA": "Harry Porter",
+        "optionB": "The Chronicles of Narnia",
+        "optionC": "The Lord of the Rings",
+        "optionD": "Eragon",
+        "answer": "The Lord of the Rings",
+        "score": 1
+    },
+
+    {
+        "question": "In geometry, a five-sided shape is called?",
+        "optionA": "Octagon",
+        "optionB": "Hexagon",
+        "optionC": "Pentagon",
+        "optionD": "Rectangle",
+        "answer": "Pentagon",
+        "score": 1
+    },
+
+     {
+        "question": "“My mom always said life was like a box of chocolates. You never know what you're gonna get.” Which American movie was that line from?",
+        "optionA": "Forest Gump",
+        "optionB": "The Shawshank Redemption",
+        "optionC": "THe Pursuit of Happiness",
+        "optionD": "The 40 year old of Virgin",
+        "answer": "Forest Gump",
+        "score": 2
+    },
+
+    {
+        "question": "In which part of the human body is the so-called pudendal nerve found?",
+        "optionA": "In the basin",
+        "optionB": "In the ankle",
+        "optionC": "In the thigh",
+        "optionD": "In the shoulder",
+        "answer": "In the basin",
+        "score": 2
+    },
+
+    {
+        "question": "What did the Roman use as mouthwash after cleaning their tooth?",
+        "optionA": "Water",
+        "optionB": "Honey water with mint",
+        "optionC": "Rose water",
+        "optionD": "Urine",
+        "answer": "Urine",
+        "score": 3
+    },
+
+    {
+        "question": "Among the 7 international units, which of the following is not included",
+        "optionA": "Candela",
+        "optionB": "Ampere",
+        "optionC": "Volt",
+        "answer": "Volt",
+        "score": 3
+    },
+
+    {
+        "question": "Which country holds the traditional sport of Wife carrying world championship?",
+        "optionA": "Norway",
+        "optionB": "Sweden",
+        "optionC": "Switzerland",
+        "optionD": "Finland",
+        "answer": "Finland",
+        "score": 1
+    },
+
+    {
+        "question": "When held to ultraviolet light, what animal’s urine glows in the dark?",
+        "optionA": "Dog",
+        "optionB": "Wolf",
+        "optionC": "Cat",
+        "optionD": "Elephant",
+        "answer": "Cat",
+        "score": 1
+    },
+
+    {
+        "question": "In which country in southern Africa is the Namib coastal desert located?",
+        "optionA": "South Africa",
+        "optionB": "Sudan",
+        "optionC": "Namibia",
+        "optionD": "Niger",
+        "answer": "Namibia",
+        "score": 2
+    },
+
+    {
+        "question": "What bombers did the U.S. aircraft carrier cluster after the Pearl Harbor incident?",
+        "optionA": "B-29 Super Fortress",
+        "optionB": "B-24 Liberator",
+        "optionC": "B-25 Mitchell",
+        "optionD": "Fatzaka",
+        "answer": "B-25 Mitchell",
+        "score": 2
+    },
+
+    {
+        "question": "In the Frozen theme song 'Let it go', how many times is 'Let it go' mentioned ?",
+        "optionA": "12 times",
+        "optionB": "8 times",
+        "optionC": "10 times",
+        "optionD": "15 times",
+        "answer": "12 times",
+        "score": 5
+    },
+
+    {
+        "question": "Which country is called 'the kingdom of education' in the world?",
+        "optionA": "China ",
+        "optionB": "Israel",
+        "optionC": "Japan",
+        "optionD": "Turkey",
+        "answer": "Israel",
+        "score": 3
+    },
+
+    {
+        "question": "In medicine, what common viral infection is inflammation of the tonsils?",
+        "optionA": "Migraine ",
+        "optionB": "Angina",
+        "optionC": "Arthralgia",
+        "optionD": "Pneumonia",
+        "answer": "Angina",
+        "score": 2
+    },
+
+    {
+        "question": "Which mathematician published more papers during his lifetime that any other mathematician in history?",
+        "optionA": "Albert Einstein ",
+        "optionB": "Isaac Newton",
+        "optionC": "Paul Erdős",
+        "optionD": "Aryabhata",
+        "answer": "Paul Erdős",
+        "score": 1
+    },
+
+    {
+        "question": "Dan chooses to calculate the diagonal of his rectangular room; which formula would be suitable for it?",
+        "optionA": "(a+b)^2", 
+        "optionB": "a^2 + c^2 = b^2",
+        "optionC": "A = b * h",
+        "optionD": "a^2 + b^2 = c^2",
+        "answer": "a^2 + b^2 = c^2",
+        "score": 1
+    },
+
+    {
+        "question": "Which European country technically shares a border with Brazil, because one of its “overseas departments” does?",
+        "optionA": "Germany", 
+        "optionB": "Belgium",
+        "optionC": "France",
+        "optionD": "Great Britain",
+        "answer": "France",
+        "score": 3
+    },
+
+    {
+        "question": "In the cartoon 'SpongeBob SquarePants', what is the most fearful of the ruffian boss?",
+        "optionA": "Whale", 
+        "optionB": "Shark",
+        "optionC": "Starfish",
+        "optionD": "Crab",
+        "answer": "Whale",
+        "score": 3
+    },
+
+    {
+        "question": "An African country, formerly known as Abyssinia",
+        "optionA": "Eritrea", 
+        "optionB": "Ethiopia",
+        "optionC": "Guinea",
+        "optionD": "Cabo Verde",
+        "answer": "Ethiopia",
+        "score": 1
+    },
+
+    {
+        "question": "On which show does the grandpa takes his grandson on various crazy adventures?",
+        "optionA": "Rick and Morty", 
+        "optionB": "Adventure Time",
+        "optionC": "Doctor Who",
+        "optionD": "Futurama",
+        "answer": "Rick and Morty",
+        "score": 1
+    },
+
+    {
+        "question": "During the routine examination of the pregnant woman, the embryo is found to have a human form. Please help her determine the approximate time of pregnancy",
+        "optionA": "Week 8", 
+        "optionB": "Week 16",
+        "optionC": "Week 24",
+        "optionD": "Week 30",
+        "answer": "Week 8",
+        "score": 2
+    },
+
+
+    {
+        "question": "What was the original use of Coke",
+        "optionA": "Cures Disease", 
+        "optionB": "Quenches thirst",
+        "optionC": "Seasoning",
+        "optionD": "Washing Dishes",
+        "answer": "Cures Disease",
+        "score": 2
+    },
+
+    {
+        "question": "How many letters are in the number 4?",
+        "optionA": "4", 
+        "optionB": "9",
+        "optionC": "5",
+        "optionD": "3",
+        "answer": "9",
+        "score": 5
+    },
+
+    {
+        "question": "For what reason Galileo isn’t credited for the discovery of Neptune?",
+        "optionA": "No one believed him", 
+        "optionB": "He thought it was a star",
+        "optionC": "Hid his discovery",
+        "optionD": "He didn'tknow it existed",
+        "answer": "He thought it was a star",
+        "score": 1
+    },
+
+    {
+        "question": "Which of the following person persuaded Franklin D. Roosevelt, for USA to enter World War II?",
+        "optionA": "Winston Churchill", 
+        "optionB": "Adolf Hitler",
+        "optionC": "Joseph Stalin",
+        "optionD": "Benito Mussolini",
+        "answer": "Winston Churchill",
+        "score": 1
+    },
+
+    {
+        "question": "Which of these four Italian dishes is not a dessert?",
+        "optionA": "Panettone", 
+        "optionB": "Cannoli",
+        "optionC": "The Crostata",
+        "optionD": "The bruschetta",
+        "answer": "The bruschetta",
+        "score": 1
+    },
+
+    {
+        "question": "Which ORGANIZATION did the United States withdraw from in October 2017?",
+        "optionA": "UNESCO", 
+        "optionB": "Joint Organization",
+        "optionC": "Federation",
+        "optionD": "NATO",
+        "answer": "UNESCO",
+        "score": 2
+    },
+
+    {
+        "question": "The national emblem of which of the following countries contains elements of the date palm tree?",
+        "optionA": "Qatar", 
+        "optionB": "United Arab Emirates",
+        "optionC": "Saudi Arabia",
+        "optionD": "Bahrain",
+        "answer": "Saudi Arabia",
+        "score": 2
+    },
+
+    {
+        "question": "Big bang theory says the universe is ____________",
+        "optionA": "Shrinking", 
+        "optionB": "Expanding",
+        "optionC": "Contracting",
+        "optionD": "Stationary",
+        "answer": "Expanding",
+        "score": 3
+    },
+
+    {
+        "question": "a + b + 2c = 2 &, a + b – c = 3 also, a – 2b – c = 1 then what is the value of a?",
+        "optionA": "6", 
+        "optionB": "3",
+        "optionC": "4/5",
+        "optionD": "0",
+        "answer": "6",
+        "score": 3
+    },
+
+    {
+        "question": "Two people are standing back to back. They each walk away from each other for three feet. Then they both turn left and walk for another four feet, and then stop. Now, how many feet apart are they standing?",
+        "optionA": "10", 
+        "optionB": "7",
+        "optionC": "25",
+        "optionD": "5",
+        "answer": "10",
+        "score": 3
+    },
+
+    {
+        "question": "One of the greatest masterpieces of ancient Greek literature is: -",
+        "optionA": "The Odyssey", 
+        "optionB": "The Road Trip",
+        "optionC": "The Expedition",
+        "optionD": "Thalassotherapy",
+        "answer": "The Odyssey",
+        "score": 1
+    },
+
+    {
+        "question": "The four countries that played in the semi-finals of the 1998 FIFA World Cup are France, Brazil, Croatia and ...",
+        "optionA": "Germany", 
+        "optionB": "Italy",
+        "optionC": "Netherlands",
+        "optionD": "Chili",
+        "answer": "Netherlands",
+        "score": 1
+    }, 
+
+    {
+        "question": "What kind of animal is building weaving webs in the corners of attics and cellars?",
+        "optionA": "Catterpillars", 
+        "optionB": "Butterflies",
+        "optionC": "Snakes",
+        "optionD": "Spider",
+        "answer": "Spider",
+        "score": 5
+    },
+
+    {
+        "question": "Power of Demacia, Which game does this character come from?",
+        "optionA": "Dota 2", 
+        "optionB": "League of Legends",
+        "optionC": "Mobile Legends Bang Bang",
+        "optionD": "World of Warcraft",
+        "answer": "League of Legends",
+        "score": 1
+    },
+
+    {
+        "question": "The term climacophobia should be understood as uncontrollable fear of . . . ",
+        "optionA": "Mud", 
+        "optionB": "Height",
+        "optionC": "Sudden Fall",
+        "optionD": "Stairs",
+        "answer": "Stairs",
+        "score": 1
+    },
+
+    {
+        "question": "Who owns the Mystery Machine van?",
+        "optionA": "Scooby Doo", 
+        "optionB": "Daphne’s Father",
+        "optionC": "Fred’s Mother",
+        "optionD": "Shaggy’s Uncle",
+        "answer": "Daphne’s Father",
+        "score": 3
+    },
+
+    {
+        "question": "Name the number that is three more than one-fifth of one-tenth of one-half of 5,000.",
+        "optionA": "503", 
+        "optionB": "103",
+        "optionC": "53",
+        "optionD": "108",
+        "answer": "53",
+        "score": 3
+    },
+
+    {
+        "question": "The Normandy landing in World War II refers to which strait the Allied soldiers crossed to France? ",
+        "optionA": "English Channel", 
+        "optionB": "Gibral Straight",
+        "optionC": "Straights of Malacca",
+        "optionD": "Suez Canal",
+        "answer": "English Channel",
+        "score": 2
+    },
+
+    {
+        "question": "What is the name of the penultimate episode of the 'Harry Potter' series of novels?",
+        "optionA": "Harry Potter and the Half-Blood Prince", 
+        "optionB": "Harry Potter and the Goblet of Fire",
+        "optionC": "Harry Potter and the Order of the Phoenix",
+        "optionD": "Harry Potter and the Gauntlet",
+        "answer": "Harry Potter and the Order of the Phoenix",
+        "score": 2
+    },
+
+    {
+        "question": "What kind of animal is the flounder, similar to the plaice, which can hide in the sands of the seabed?",
+        "optionA": "Fish", 
+        "optionB": "Turtle",
+        "optionC": "Cat",
+        "optionD": "Shrimp",
+        "answer": "Fish",
+        "score": 2
+    },
+
+    {
+        "question": "What is the middle note of the Chanel No. 5 perfume",
+        "optionA": "Rose, Vanilla, Musk", 
+        "optionB": "Rose, Ylang-ylang, Iris",
+        "optionC": "Rose, Rosemary, Lavender",
+        "optionD": "Turmeric, Rosemary, Iris",
+        "answer": "Rose, Ylang-ylang, Iris",
+        "score": 3
+    },
+
+    {
+        "question": "Why do people yawn?",
+        "optionA": "Inhale oxygen in time to expel carbon dioxide", 
+        "optionB": "Inhale carbon dioxide in time to expel oxygen",
+        "optionC": "Sign of tired and exhausted body",
+        "optionD": "Feeling sleepy",
+        "answer": "Inhale oxygen in time to expel carbon dioxide",
+        "score": 1
+    },
+
+    {
+        "question": "Who is the author of A Brief History of Time, which describes the origin of the Universe?",
+        "optionA": "Steven Hawking", 
+        "optionB": "J.K Rowling",
+        "optionC": "Carl Sagan",
+        "optionD": "Neil deGrasse Tyson",
+        "answer": "Steven Hawking",
+        "score": 1
+    },
+
+    {
+        "question": "In which country was the emoji invented?",
+        "optionA": "United States", 
+        "optionB": "South Korea",
+        "optionC": "Japan",
+        "optionD": "China",
+        "answer": "Japan",
+        "score": 5
+    },
+
+    {
+        "question": "Which fruit has Kyoto, Bergeron, Big red and Rouge du Roussillon varieties?",
+        "optionA": "Orange", 
+        "optionB": "Kiwi",
+        "optionC": "Dragon Fruit",
+        "optionD": "Apricot",
+        "answer": "Apricot",
+        "score": 1
+    },
+
+    {
+        "question": "What kind of chemical is commonly called alcohol?",
+        "optionA": "Methanol", 
+        "optionB": "Ethanol",
+        "optionC": "Butanol",
+        "optionD": "Cougor Bourbon",
+        "answer": "Ethanol",
+        "score": 1
+    },
+
+    {
+        "question": "Which of the following video container formats can encapsulate the largest number of tracks?",
+        "optionA": "mkv", 
+        "optionB": "wmv",
+        "optionC": "flv",
+        "optionD": "aac",
+        "answer": "mkv",
+        "score": 2
+    },
+
+    {
+        "question": "In what year was the world's first computer ENIAC successfully developed?",
+        "optionA": "1944", 
+        "optionB": "1945",
+        "optionC": "1946",
+        "optionD": "1972",
+        "answer": "1945",
+        "score": 2
+    },
+
+    {
+        "question": "Whose first digit is one-fourth of the last digit; the second digit is six times the first digit, and the third digit is the second digit plus three.",
+        "optionA": "1786", 
+        "optionB": "2565",
+        "optionC": "1946",
+        "optionD": "1694",
+        "answer": "1694",
+        "score": 3
+    },
+
+    {
+        "question": "Which of the following options is the capital of the Vatican?",
+        "optionA": "Rome", 
+        "optionB": "Vatican City",
+        "optionC": "Greece",
+        "optionD": "St.Peter",
+        "answer": "Vatican City",
+        "score": 1
+    },
+
+    {
+        "question": "Which footballer born in 1966 is the first African player to receive the Golden Ball?",
+        "optionA": "Drogba", 
+        "optionB": "Eto'o",
+        "optionC": "Weah",
+        "optionD": "Essien",
+        "answer": "Weah",
+        "score": 3
+    },
+
+    {
+        "question": "Which of these is a perfect number?",
+        "optionA": "8", 
+        "optionB": "12",
+        "optionC": "15",
+        "optionD": "6",
+        "answer": "6",
+        "score": 3
+    },
+
+    {
+        "question": "Which system of the human body is harmful to noise: ",
+        "optionA": "Cardiovascular system", 
+        "optionB": "Digestive system ",
+        "optionC": "Respiratory system",
+        "optionD": "Reproductive system",
+        "answer": "Cardiovascular system",
+        "score": 2
+    },
+
+    {
+        "question": "No. of scent Receptor does dog have in their noses?",
+        "optionA": "50 million", 
+        "optionB": "250 million",
+        "optionC": "750 million",
+        "optionD": "300 million",
+        "answer": "300 million",
+        "score": 3
+    },
+
+    {
+        "question": "Which American president died on the same day as writer Aldous Huxley, November 22, 1963?",
+        "optionA": "William Henry Harrison", 
+        "optionB": "Abraham Lincoln",
+        "optionC": "Franklin D Roosevelt",
+        "optionD": "John Fitzgerald KENNEDY",
+        "answer": "John Fitzgerald KENNEDY",
+        "score": 5
+    }
+
+
+
+
+]
