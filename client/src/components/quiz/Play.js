@@ -242,22 +242,38 @@ class Play extends Component {
                                             <h4 className="txt-center">{currentQuestion.question}</h4>
                                             <div className="col l6 s12 margin-bottom-0 margin-top-10">
                                                 <p className="padding-top-5">
-                                                <label className="margin-right-20">
-                                                    <input name="group1" type="radio"  value ="yes"/>
-                                                    <span onClick={this.handleOptionClick}><b>{currentQuestion.optionA}</b></span>
-                                                </label>
-                                                <label className="margin-right-20">
-                                                    <input name="group1" type="radio" value="no" />
-                                                    <span onClick={this.handleOptionClick}><b>{currentQuestion.optionB}</b></span>
-                                                </label>
-                                                <label className="margin-right-20">
-                                                    <input name="group1" type="radio" value="no" />
-                                                    <span onClick={this.handleOptionClick}><b>{currentQuestion.optionC}</b></span>
-                                                </label>
-                                                <label className="margin-right-20">
-                                                    <input name="group1" type="radio" value="no" />
-                                                    <span onClick={this.handleOptionClick}><b>{currentQuestion.optionD}</b></span>
-                                                </label>
+                                                    <label className="input-field margin-right-20">
+                                                        <input
+                                                            className="btn waves-effect waves-light "
+                                                            name="group1" type="button"
+                                                            onClick={this.handleOptionClick} 
+                                                            value ={currentQuestion.optionA}
+                                                        />
+                                                    </label>
+                                                    <label className="input-field margin-right-20">
+                                                        <input
+                                                            className="btn waves-effect waves-light "
+                                                            name="group1" type="button"
+                                                            onClick={this.handleOptionClick} 
+                                                            value ={currentQuestion.optionB}
+                                                        />
+                                                    </label>
+                                                    <label className="input-field margin-right-20">
+                                                        <input
+                                                            className="btn waves-effect waves-light "
+                                                            name="group1" type="button"
+                                                            onClick={this.handleOptionClick} 
+                                                            value ={currentQuestion.optionC}
+                                                        />
+                                                    </label>
+                                                    <label className="input-field margin-right-20">
+                                                        <input
+                                                            className="btn waves-effect waves-light"
+                                                            name="group1" type="button"
+                                                            onClick={this.handleOptionClick} 
+                                                            value ={currentQuestion.optionD}
+                                                        />
+                                                    </label>
                                                 </p>
                                             </div>
                                             <div className="input-field col s12 margin-bottom-0 txt-center">
